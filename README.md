@@ -21,13 +21,12 @@ I offer comprehensive training programs in data analysis, visualization, and dat
 
 *A glimpse of some of the projects I've been working on.*
 
-**Predictive Modeling and Hypothesis Testing using Titanic Dataset.**
+**Inverted Pendulum.**
 ![image](1 anietie etuk data analytics car project.jpeg)
 
-The sinking of the Titanic is one of the most infamous shipwrecks in history.
+The inverted pendulum is classic control theory problem. In my project it consists of a pendulum balanced upside down by a cart moved by a motor.
 
-
-[Read More](https://www.linkedin.com/pulse/predictive-modeling-hypothesis-testing-using-titanic-dataset-anietie/)
+[Read More](https://www.samgowel.com/projects)
 
 **Predictive Modeling and Hypothesis Testing using Titanic Dataset.**
 
