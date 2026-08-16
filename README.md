@@ -22,7 +22,7 @@ I offer comprehensive training programs in data analysis, visualization, and dat
 *A glimpse of some of the projects I've been working on.*
 
 **Inverted Pendulum.**
-![image](IMG_2636.JPG)
+![image](IMG_2636.jpg)
 
 The inverted pendulum is classic control theory problem. In my project it consists of a pendulum balanced upside down by a cart moved by a motor.
 
