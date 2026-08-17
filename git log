@@ -1,0 +1,39 @@
+[33m10cbd34[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfancier[m[33m)[m Merge branch 'fancier' of https://github.com/Sam41774/portfolio into fancier
+[33md3ccb9d[m adfdsf
+[33mbcd3862[m[33m ([m[1;31morigin/fancier[m[33m)[m Add responsive hero section styles to style.css
+[33mb990b83[m Change headshot image format from jpg to png
+[33mc112cd0[m Update index.html
+[33m183c3f8[m Revise project description and milestones
+[33m0eac5c6[m Update index.html
+[33mffa077f[m Remove 'What I Do' link from navigation
+[33m7e29013[m Revise introduction, skills, and contact details
+[33m0852bd2[m add reseume file
+[33m22fcc41[m Update contact information and footer details
+[33m1babc11[m add project pages
+[33ma2f23a9[m add
+[33m6d28b86[m add new html and css files
+[33mc1735ed[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m Fix image file extension in README
+[33mc92ce98[m Change image format in README
+[33m1b7d69a[m Merge branch 'main' of https://github.com/Sam41774/portfolio
+[33mbc6a5b2[m update image file type
+[33m85b692e[m Update image in README for Inverted Pendulum project
+[33m4c65539[m insert image
+[33m536dfbb[m add inverted pendlum image
+[33mf6edb18[m Revise project details in README.md
+[33mae92ab2[m Rename projects to projects.md
+[33mf4b937c[m Add 'inverted pendulum' project
+[33madefde8[m Revise README with personal and project details
+[33m326353d[m Change theme from minima to Architect
+[33mdad65ea[m Fix theme name in configuration file
+[33m18de0e8[m Update README.md
+[33mc89fd74[m Add logo entry to configuration file
+[33m07f4552[m Add headshot to site configuration
+[33mb977e5d[m Add files via upload
+[33m7b5a58d[m Delete
+[33md794b1d[m Add files via upload
+[33m4cc9a76[m Change portfolio header to About Me
+[33mbaa6fcc[m Update CNAME
+[33m22f9864[m Create CNAME
+[33m2efec5e[m Add title and theme to configuration
+[33m28f6005[m Create _config.yml
+[33me9e1005[m Initial commit
