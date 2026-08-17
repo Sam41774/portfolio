@@ -17,7 +17,6 @@
     <span class="nav-mark">SG&thinsp;/&thinsp;01</span>
     <nav class="nav-links">
       <a href="index.html#about">About</a>
-      <a href="index.html#work">What I Do</a>
       <a href="index.html#portfolio">Portfolio</a>
       <a href="index.html#contact">Contact</a>
     </nav>
@@ -40,19 +39,19 @@
     <div class="meta-row">
       <div class="meta-item">
         <span class="meta-label">ROLE</span>
-        <span class="meta-value">[Your role — e.g. Designer / Builder / Solo]</span>
+        <span class="meta-value">Independent Project</span>
       </div>
       <div class="meta-item">
         <span class="meta-label">TOOLS</span>
-        <span class="meta-value">[e.g. MATLAB, Simulink, Arduino]</span>
+        <span class="meta-value">MatLab, Solidworks, C++</span>
       </div>
       <div class="meta-item">
         <span class="meta-label">TIMELINE</span>
-        <span class="meta-value">[e.g. Spring 2025 — 6 weeks]</span>
+        <span class="meta-value">March — August 2026</span>
       </div>
       <div class="meta-item">
         <span class="meta-label">STATUS</span>
-        <span class="meta-value">[e.g. Completed / Ongoing]</span>
+        <span class="meta-value">Completed</span>
       </div>
     </div>
   </div>
@@ -78,21 +77,34 @@
       <h2>Overview</h2>
       <p>
         The inverted pendulum is a classic control theory problem: a pendulum
-        is mounted upside down on a cart, and the cart must be moved
-        precisely — usually driven by a motor — to keep the pendulum
+        is mounted upside down on a cart, and the cart must be moved to keep the pendulum
         balanced vertically. It's an unstable system, meaning without active
         correction it will simply fall.
       </p>
-      <p>[Add a sentence or two on why you chose this project and what you wanted to learn from it.]</p>
+      <p>
+      I decided to initialy pursue this topic as an indepent final prjoect in MATH 2406H. 
+      The goal of this iniitial projcet was to simulate the system and create my own optimzation 
+      program to find the correct gains for the simulated PID controler. To do this I ultumatly
+      derived the equations of motion for the pendlum and simulated it in MatLab. The full 
+      report is avalible here.
+      </p>
+      <p>
+      This initial project, that included indpeth anaylsis of the system, laied the groundwork 
+      for the physical project depicted here. 
+      </p>
     </section>
 
     <section class="content-section" id="approach">
       <h2>Approach</h2>
-      <p>[Describe your control strategy here — e.g. PID control, state-space / LQR control, or another method. Explain how you modeled the system dynamics and tuned your controller.]</p>
+      <p>
+        To control the pendulum I used a PD controler. I orginally intened to 
+        a use feedfowrad state space model, like in the initial simulations, 
+        but chose the PD contorler for simplicity. 
+      </p>
       <ul>
-        <li>[Step or milestone 1 — e.g. derived the equations of motion]</li>
-        <li>[Step or milestone 2 — e.g. built the physical cart-and-motor rig]</li>
-        <li>[Step or milestone 3 — e.g. implemented and tuned the controller]</li>
+        <li>Milestone 1: Built the Physical Rig</li>
+        <li>Milestone 2: Developed the Motor Control Algorithim</li>
+        <li>Milestone 3: implemented and Tuned the Controller</li>
       </ul>
     </section>
 
@@ -115,6 +127,7 @@
   <a href="project-2.html">Next Project →</a>
 </nav>
 
+  
 <!-- ============ TITLE BLOCK / FOOTER ============ -->
 <footer class="titleblock">
   <div class="titleblock-inner">
@@ -127,15 +140,12 @@
       <span class="tb-value">AEROSPACE ENGINEERING</span>
     </div>
     <div class="tb-cell">
-      <span class="tb-label">SCALE</span>
-      <span class="tb-value">NOT TO SCALE</span>
-    </div>
-    <div class="tb-cell">
-      <span class="tb-label">SHEET</span>
-      <span class="tb-value">01 OF 03</span>
+      <span class="tb-label">Scale</span>
+      <span class="tb-value">1:1</span>
     </div>
   </div>
 </footer>
+
 
 </body>
 </html>
