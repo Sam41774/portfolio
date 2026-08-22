@@ -144,7 +144,18 @@
 
     <section class="content-section" id="challenges">
       <h2>Challenges</h2>
-      <p>[What was the hardest part? e.g. sensor noise, tuning gains, mechanical friction, real-time control loop timing.]</p>
+        <li>Steper Motor Control:</li>
+          <P>
+            I orginialy chose a stepper motor for this project becasue I mistakanly thought the position of the gantry would be important. The pendulum is balcnaced only by calculating the 
+            force to be applied to the gantry, so it is not required to track the position. I discovered this while working on the earilier paper, but decided to use what I had on hand. 
+          </P>
+          <p>
+            This made it harder to program the controler, but it did allow the gantry to stay in the middle of the track with no additinal hardware, such as another encoder for the 
+            belt. Ultimatly, while this desicion proved helpful in reducing the total number of components and greatly expanding my knowledge of stepper motor control, a standard 
+            motor would be better suited for this project.
+          </p>
+
+      
     </section>
 
     <section class="content-section" id="results">
