@@ -117,6 +117,17 @@
             chose an optical encoder because it is very presices and adds very little friction to the pendulum alowing the movement to be as smooth as possible.
           </p>
         <li>Milestone 2: Developed the Motor Control Algorithim</li>
+          <P>
+            To control the stepper motor I orginialy intented to use a simple quadruple half-H bridge driver, however due to the high current draw of the motor it expereinced overheating issues.
+            To fix this I upgraded to a drv8825 stepper motor driver that was capable of supplying the full 2.1A. 
+          </P>
+          <p>
+            Developing a control algorthim for the motor to work with PD controler took a substanial amount of time becasue of two main reasons: the force applied to
+            gantry is what is important and the stepper motor takes time to reach a specified speed without skiping steps. 
+          </p>
+          <p>
+            To remedy the issue of not being able to easily apply a specifed force to the gantry I simply 
+          </p>
         <li>Milestone 3: implemented and Tuned the Controller</li>
       </ul>
     </section>
