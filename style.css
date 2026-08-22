@@ -476,6 +476,33 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--amber); outline
   border-radius: 4px;
 }
 
+/* Results GIF and caption styling */
+.results-figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 18px auto 0;
+  gap: 8px;
+}
+
+.results-figure img {
+  max-width: 720px;
+  width: 80%;
+  height: auto;
+  display: block;
+  border: 1px solid rgba(87, 214, 255, 0.25);
+  border-radius: 4px;
+}
+
+.results-figure figcaption {
+  color: rgba(234, 242, 255, 0.72);
+  font-size: 0.95rem;
+  font-style: italic;
+  max-width: 66ch;
+  margin: 0;
+}
+
 .project-content {
   max-width: var(--max-w);
   margin: 0 auto;
