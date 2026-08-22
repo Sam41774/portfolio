@@ -126,7 +126,12 @@
             gantry is what is important and the stepper motor takes time to reach a specified speed without skiping steps. 
           </p>
           <p>
-            To remedy the issue of not being able to easily apply a specifed force to the gantry I simply 
+            To remedy the issue of not being able to easily apply a specifed force to the gantry I simply focused on controlling the acceleration which is easier to calculate ussing the 
+            step infomration from the stepper motor. 
+          </p>
+          <p>
+            Scince the acceleration of the gantry is tracked by the step information from the motor, not having the stepper motor skip steps was imparitive. To acchive this I eventualy 
+            settled on using the AccelStepper library and a combination of hard coded limits to keep things as simple and reliable as posible. 
           </p>
         <li>Milestone 3: implemented and Tuned the Controller</li>
       </ul>
