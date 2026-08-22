@@ -82,14 +82,14 @@
         correction it will simply fall.
       </p>
       <p>
-      I decided to initialy pursue this topic as an indepent final prjoect in MATH 2406H. 
-      The goal of this iniitial projcet was to simulate the system and create my own optimzation 
-      program to find the correct gains for the simulated PID controler. To do this I ultumatly
-      derived the equations of motion for the pendlum and simulated it in MatLab. The full 
-      report is avalible <a href="finalReport.pdf">here</a>.
+      I decided to initially pursue this topic as an independent final project in MATH 2406H. 
+      The goal of this initial project was to simulate the system and create my own optimization 
+      program to find the correct gains for the simulated PID controller. To do this I ultimately
+      derived the equations of motion for the pendulum and simulated it in MATLAB. The full 
+      report is available <a href="finalReport.pdf">here</a>.
       </p>
       <p>
-      This initial project, that included indpeth anaylsis of the system, laied the groundwork 
+      This initial project, which included in-depth analysis of the system, laid the groundwork 
       for the physical project depicted here. 
       </p>
     </section>
@@ -97,71 +97,69 @@
     <section class="content-section" id="approach">
       <h2>Approach</h2>
       <p>
-        To control the pendulum I used a PD controler. I orginally intened to 
-        a use feedfowrad state space model, like in the initial simulations, 
-        but chose the PD contorler for simplicity. 
+        To control the pendulum I used a PD controller. I originally intended to
+        use a feedforward state-space model, like in the initial simulations,
+        but chose the PD controller for simplicity.
       </p>
       <ul>
         <li>Milestone 1: Built the Physical Rig</li>
           <p>
-            The rig is comprised of 2020 v-slot alluminium extrusion for main rail where the gantry rides, as well as the legs. I chose this becasue it offers extensive flexibilty
-            while also offering rigidity and a built in track for the gantry. 
+            The rig is comprised of 2020 V-slot aluminum extrusion for the main rail where the gantry rides, as well as the legs. I chose this because it offers extensive flexibility
+            while also providing rigidity and a built-in track for the gantry.
           </p>
           <p>
-            The gantry is moved via a belt that is connected to the stepper motor and the gantry itslef. The stepper motor I chose for this project is a standard Nema 17 
-            stepper capable of 2.1A (part number: 17hs24-2104s) that I was able to scavange. I chose this stepper motor becasue it ensures that torque would not be a limiting 
+            The gantry is moved via a belt connected to the stepper motor and the gantry itself. The stepper motor I chose for this project is a standard NEMA 17
+            stepper capable of 2.1A (part number: 17hs24-2104s) that I was able to scavenge. I chose this stepper because it ensured torque would not be a limiting
             factor.
           </p>
           <p>
-            Finaly the pendulum mount itself consists of an optical encoder (<a href="https://www.amazon.com/dp/B00Y9KDDCY?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1">this one</a>), I
-            chose an optical encoder because it is very presices and adds very little friction to the pendulum alowing the movement to be as smooth as possible.
+            Finally, the pendulum mount itself includes an optical encoder (<a href="https://www.amazon.com/dp/B00Y9KDDCY?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1">this one</a>). I
+            chose an optical encoder because it is very precise and adds very little friction to the pendulum, allowing the movement to be as smooth as possible.
           </p>
-        <li>Milestone 2: Developed the Motor Control Algorithim</li>
-          <P>
-            To control the stepper motor I orginialy intented to use a simple quadruple half-H bridge driver, however due to the high current draw of the motor it expereinced overheating issues.
-            To fix this I upgraded to a drv8825 stepper motor driver that was capable of supplying the full 2.1A. 
-          </P>
+        <li>Milestone 2: Developed the Motor Control Algorithm</li>
           <p>
-            Developing a control algorthim for the motor to work with PD controler took a substanial amount of time becasue of two main reasons: the force applied to
-            gantry is what is important and the stepper motor takes time to reach a specified speed without skiping steps. 
+            To control the stepper motor I originally intended to use a simple quadruple half-H bridge driver; however, due to the high current draw of the motor it experienced overheating issues.
+            To fix this I upgraded to a DRV8825 stepper motor driver capable of supplying the full 2.1A.
           </p>
           <p>
-            To remedy the issue of not being able to easily apply a specifed force to the gantry I simply focused on controlling the acceleration which is easier to calculate ussing the 
-            step infomration from the stepper motor. 
+            Developing a control algorithm for the motor to work with the PD controller took a substantial amount of time because of two main reasons: the force applied to
+            the gantry is what matters, and the stepper motor takes time to reach a specified speed without skipping steps.
           </p>
           <p>
-            Scince the acceleration of the gantry is tracked by the step information from the motor, not having the stepper motor skip steps was imparitive. To acchive this I eventualy 
-            settled on using the AccelStepper library and a combination of hard coded limits to keep things as simple and reliable as posible. 
+            To remedy the issue of not being able to easily apply a specified force to the gantry I focused on controlling the acceleration, which is easier to calculate using the
+            step information from the stepper motor.
           </p>
-        <li>Milestone 3: implemented and Tuned the Controller</li>
           <p>
-            Once the motor control was taken care of, implementing the PD controler was quite straight forward. The simulations from my earlier reserch helped substantialy in the tuning
-            process by giving the relitive size of each gain to each other. However, because I ultimatly chnaged aproacehs and the simulation was lacking variablese, 
-            it was not entirly accurate. 
+            Since the acceleration of the gantry is tracked by the step information from the motor, preventing the stepper motor from skipping steps was imperative. To achieve this I eventually
+            settled on using the AccelStepper library and a combination of hard-coded limits to keep things as simple and reliable as possible.
+          </p>
+        <li>Milestone 3: Implemented and Tuned the Controller</li>
+          <p>
+            Once the motor control was taken care of, implementing the PD controller was straightforward. The simulations from my earlier research helped substantially in the tuning
+            process by indicating the relative size of each gain. However, because I ultimately changed approaches and the simulation lacked some variables, it was not entirely accurate.
           </p>
       </ul>
     </section>
 
     <section class="content-section" id="challenges">
       <h2>Challenges</h2>
-        <li>Steper Motor Control:</li>
-          <P>
-            I orginialy chose a stepper motor for this project becasue I mistakanly thought the position of the gantry would be important. The pendulum is balcnaced only by calculating the 
-            force to be applied to the gantry, so it is not required to track the position. I discovered this while working on the earilier paper, but decided to use what I had on hand. 
-          </P>
+        <li>Stepper Motor Control:</li>
           <p>
-            This made it harder to program the controler, but it did allow the gantry to stay in the middle of the track with no additinal hardware, such as another encoder for the 
-            belt. Ultimatly, while this desicion proved helpful in reducing the total number of components and greatly expanding my knowledge of stepper motor control, a standard 
+            I originally chose a stepper motor for this project because I mistakenly thought the position of the gantry would be important. The pendulum is balanced only by calculating the
+            force to be applied to the gantry, so it is not required to track the position. I discovered this while working on the earlier paper, but decided to use what I had on hand.
+          </p>
+          <p>
+            This made it harder to program the controller, but it did allow the gantry to stay in the middle of the track with no additional hardware, such as another encoder for the
+            belt. Ultimately, while this decision proved helpful in reducing the total number of components and greatly expanding my knowledge of stepper motor control, a standard
             motor would be better suited for this project.
           </p>
 
-      
     </section>
 
     <section class="content-section" id="results">
       <h2>Results</h2>
       <p>
-        The pendulum is very stable and it can balance indefintly. It can correct disturbances in less then 5 seconds. 
+        The pendulum is very stable and can balance indefinitely. It can correct disturbances in less than 5 seconds.
       </p>
       <figure class="results-figure">
         <img src="pendulum-gif.gif" alt="Pendulum balancing animation">
@@ -197,6 +195,9 @@
   </div>
 </footer>
 
+<div class="site-source">
+  <p><a href="https://github.com/Sam41774/portfolio">View project on GitHub</a></p>
+</div>
 
 </body>
 </html>
