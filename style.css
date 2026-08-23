@@ -603,3 +603,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--amber); outline
   .tb-cell { border-left: none; border-top: 1px solid rgba(11, 37, 69, 0.2); }
   .tb-cell:first-child { border-top: none; }
 }
+
+/* ============ EXPERIENCE PAGE ACCENT ============ */
+.experience-hero .eyebrow { color: var(--amber); }
+.experience-page .project-figure img { border-color: rgba(255, 180, 84, 0.25); }
